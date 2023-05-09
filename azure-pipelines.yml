@@ -68,6 +68,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool:
+      name: OnPrem
       vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
